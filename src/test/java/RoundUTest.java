@@ -16,7 +16,7 @@ public class RoundUTest {
 	public void computeRoundScore_withANormalRound_shouldBeOnlyValue() {
 		// Setup
 		currentRound = new Round(null , null);
-		currentRound.beNormal(3);
+		currentRound.beNormal('1', '2');
 
 		// Test
 		int computedScore = currentRound.computeRoundScore();

@@ -23,9 +23,9 @@ public class Round {
 
 	}
 
-	public void beNormal(int roundValue) {
+	public void beNormal(Character firstThrow, Character secondThrow) {
 		this.roundType = RoundType.NORMAL;
-		this.value = roundValue;
+		this.value = getValueFromAChar(firstThrow) + getValueFromAChar(secondThrow) ;
 	}
 
 	public int computeRoundScore() {
