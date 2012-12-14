@@ -10,7 +10,7 @@ public class RoundUTest {
 
 	}
 
-	
+	 
 
 	@Test
 	public void computeRoundScore_withANormalRound_shouldBeOnlyValue() {

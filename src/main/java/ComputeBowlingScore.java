@@ -29,7 +29,7 @@ public class ComputeBowlingScore {
 			Character currentThrow = it.next();
 			Character nextThrow = throwNumber + 1 < scoreList.size() ? scoreList.get(throwNumber + 1) : '-';
 			Character afterNextThrow = throwNumber + 2 < scoreList.size() ? scoreList.get(throwNumber + 2) : '-';
-			Round round = new Round(nextThrow, afterNextThrow);
+			Round round = new Round(nextThrow, afterNextThrow); 
 			throwNumber++;
 
 
@@ -72,34 +72,32 @@ public class ComputeBowlingScore {
 	 * - - - - - - - - - - - - - - - - - - - - - - - - - - -
 	 */
 
-	// public int computeV0(String allScores) {
-	// int score = 0;
-	//
-	// char[] scoresArray = allScores.toCharArray();
-	// char previousScore = '0';
-	// for (char currentScore : scoresArray) {
-	//
-	// if (currentScore != '-') {
-	// if (currentScore == '/') {
-	// score += 10
-	// - Character.getNumericValue(previousScore);
-	// previousScore = '0';
-	// } else if (currentScore == 'X') {
-	// if (previousScore == 'X') {
-	// score += 10 * 2;
-	// }
-	// score += 10;
-	// previousScore = currentScore;
-	// } else {
-	// int currentScoreValue = Character
-	// .getNumericValue(currentScore);
-	// score += currentScoreValue;
-	// previousScore = currentScore;
-	// }
-	// }
-	//
-	// }
-	// return score;
-	// }
+//	public int computeV0(String allScores) {
+//		int score = 0;
+//
+//		char[] scoresArray = allScores.toCharArray();
+//		char previousScore = '0';
+//		for (char currentScore : scoresArray) {
+//
+//			if (currentScore != '-') {
+//				if (currentScore == '/') {
+//					score += 10 - Character.getNumericValue(previousScore);
+//					previousScore = '0';
+//				} else if (currentScore == 'X') {
+//					if (previousScore == 'X') {
+//						score += 10 * 2;
+//					}
+//					score += 10;
+//					previousScore = currentScore;
+//				} else {
+//					int currentScoreValue = Character.getNumericValue(currentScore);
+//					score += currentScoreValue;
+//					previousScore = currentScore;
+//				}
+//			}
+//
+//		}
+//		return score;
+//	}
 
 }
